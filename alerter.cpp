@@ -3,7 +3,7 @@
 #include "NetworkStub.h"
 
 int alertFailureCount = 0;
-Alert returnCode = {false ,0};
+AlertStatus returnCode = {false ,0};
 
 void alertInCelcius(float farenheit) {
     float celcius = (farenheit - 32) * 5 / 9;
