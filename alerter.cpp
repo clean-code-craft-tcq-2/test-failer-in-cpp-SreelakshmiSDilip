@@ -20,7 +20,7 @@ void alertInCelcius(float farenheit) {
 int main() {
     alertInCelcius(400.5);
     assert(alertFailureCount== 1);
-    assert(returnCode.isNetworkAlertStubCalled == true);
+    assert(returnCode.isNetworkAlertStubCalled == true); //alerter should be called only if tempinC exceeds threshold.
     alertInCelcius(303.6);
     assert(alertFailureCount== 1);
     assert(returnCode.isNetworkAlertStubCalled == false);
