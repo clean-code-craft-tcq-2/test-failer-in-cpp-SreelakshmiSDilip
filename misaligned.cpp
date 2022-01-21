@@ -36,7 +36,7 @@ std::string GetCombinedPairNumandColorString(int majorColorId , int minorColorId
 void testColorCodingReferenceManual(int majorColorId, int minorColorId , std::string expectedPairNumberandColor)
 {
 
-	std:: string actualPairNumberandColor = TelCoColorCoder::GetCombinedPairNumandColorString(majorColorId,minorColorId);
+	std:: string actualPairNumberandColor = GetCombinedPairNumandColorString(majorColorId,minorColorId);
 	assert(actualPairNumberandColor.compare(expectedPairNumberandColor) == 0);
 
 
