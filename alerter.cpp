@@ -20,10 +20,16 @@ void alertInCelcius(float farenheit) {
 int main() {
     alertInCelcius(400.5);
     assert(alertFailureCount== 1);
+    assert(returnCode.isNetworkAlertStubCalled == true);
     alertInCelcius(303.6);
     assert(alertFailureCount== 1);
+    assert(returnCode.isNetworkAlertStubCalled == false);
     alertInCelcius(505.2);
     assert(alertFailureCount== 2);
+    assert(returnCode.isNetworkAlertStubCalled == true);
+    alertInCelcius(105.2);
+    assert(alertFailureCount== 2);
+    assert(returnCode.isNetworkAlertStubCalled == false);
     std::cout << alertFailureCount << " alerts failed.\n";
     std::cout << "All is well (maybe!)\n";
     return 0;
