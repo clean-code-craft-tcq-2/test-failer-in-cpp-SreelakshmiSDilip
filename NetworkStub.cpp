@@ -1,4 +1,4 @@
-#include"NetworkStub.h"
+#include "NetworkStub.h"
 int networkAlertStub(float celcius) {
     std::cout << "ALERT: Temperature is " << celcius << " celcius.\n";
     // Return 200 for ok
