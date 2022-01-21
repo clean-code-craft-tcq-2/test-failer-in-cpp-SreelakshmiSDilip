@@ -17,8 +17,8 @@ int main() {
     assert(size(37) == 'S');
     assert(size(40) == 'M');
     assert(size(43) == 'L');
-	assert((size(38) != 'L')); // size 38 can  be small or medium
-	assert(size(42) != 'S');   //size 42 can be medium or large
+    assert((size(38) != 'L')); // size 38 can  be small or medium
+    assert(size(42) != 'S');   //size 42 can be medium or large
     assert((size(1000) != 'S') && (size(1000) != 'M') && (size(1000) != 'L')) // size 1000 is not a valid input
     assert((size(0) != 'S') && (size(0) != 'M') && (size(0) != 'L')) // size 0 is not a valid input
     assert((size(-10) != 'S') && (size(-10) != 'M') && (size(-10) != 'L')) // size -10 is not a valid input
