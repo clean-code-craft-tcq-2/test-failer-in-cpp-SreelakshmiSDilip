@@ -3,11 +3,11 @@
 #include "NetworkStub.h"
 
 int alertFailureCount = 0;
-
+Alert returnCode = {false ,0};
 
 void alertInCelcius(float farenheit) {
     float celcius = (farenheit - 32) * 5 / 9;
-    AlertStatus returnCode = networkAlertStub(celcius);
+    returnCode = networkAlertStub(celcius);
     if (returnCode.isTempAlertSuccess != 200) {
         // non-ok response is not an error! Issues happen in life!
         // let us keep a count of failures to report
