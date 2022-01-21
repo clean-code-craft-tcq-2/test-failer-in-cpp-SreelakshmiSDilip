@@ -7,7 +7,7 @@ struct AlertStatus
     int  isTempAlertSuccess;
 }
 
-AlertStruct networkAlertStub(float celcius) {
+AlertStatus networkAlertStub(float celcius) {
    
     std::cout << "ALERT: Temperature is " << celcius << " celcius.\n";
     AlertStatus alertStatusForCurrenttemp = {true , 200};
