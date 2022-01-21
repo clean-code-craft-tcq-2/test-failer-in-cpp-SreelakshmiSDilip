@@ -5,7 +5,7 @@ struct AlertStatus
 {
     bool isNetworkAlertStubCalled;
     int  isTempAlertSuccess;
-}
+};
 
 struct AlertStatus networkAlertStub(float celcius) {
    
