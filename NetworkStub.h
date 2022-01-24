@@ -1,6 +1,25 @@
 #include <iostream>
 
 const int c_AlertThresholdTempCel = 200 ;
+enum TESTENV
+{
+   Real = 0,
+   Simulation = 1
+   } testParameter;
+
+int networkAlert(float celcius , TESTENV testParameter)
+{
+   int l_returnCode = 0
+   if(testParameter == TESTENV::Real)
+   {
+      // add actual network communication code here
+   }
+   else
+   {
+      l_returnCode = networkAlertStub(float celcius);
+   }
+   return l_returnCode;
+}
 
 int  networkAlertStub(float celcius) {
    
