@@ -1,18 +1,20 @@
 #include <iostream>
 
 const int c_AlertThresholdTempCel = 200 ;
-struct AlertStatus
-{
-    bool isNetworkAlertStubCalled;
-    int  isTempAlertSuccess;
-};
 
-struct AlertStatus networkAlertStub(float celcius) {
+int  networkAlertStub(float celcius) {
    
     std::cout << "ALERT: Temperature is " << celcius << " celcius.\n";
-    AlertStatus alertStatusForCurrenttemp = {true , 200};
+    if(c_AlertThresholdTempCel > celcius)
+    {
+        return 200;
+    }
+    else
+    {
+        return 500;
+    }
     // Return 200 for ok
     // Return 500 for not-ok
     // stub always succeeds and returns 200
-    return alertStatusForCurrenttemp;
+   
 }
