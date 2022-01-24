@@ -2,7 +2,7 @@
 #include <assert.h>
 #include "NetworkStub.h"
 
-static int alertFailureCount = 0;
+int alertFailureCount = 0;
 int returnCode = 0;
 
 void alertInCelcius(float farenheit) {
@@ -21,7 +21,9 @@ int main() {
     alertInCelcius(400.5);
     assert(alertFailureCount== 1);
     alertInCelcius(303.6);
-    //assert(alertFailureCount== 1);
+    assert(alertFailureCount== 1);
+    alertInCelcius(603.6);
+    assert(alertFailureCount== 2);
     std::cout << "All is well (maybe!)\n";
     return 0;
 }
