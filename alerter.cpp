@@ -18,11 +18,11 @@ void alertInCelcius(float farenheit , TESTENV testParameter) {
 }
 
 int main() {
-    alertInCelcius(400.5 , 0);
+    alertInCelcius(400.5 , TESTENV :: Simulation);
     assert(alertFailureCount== 1);
-    alertInCelcius(303.6 , 0);
+    alertInCelcius(303.6 , TESTENV :: Simulation);
     assert(alertFailureCount== 1);
-    alertInCelcius(603.6 , 0);
+    alertInCelcius(603.6 , TESTENV :: Simulation);
     assert(alertFailureCount== 2);
     std::cout << "All is well (maybe!)\n";
     return 0;
