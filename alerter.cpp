@@ -1,6 +1,6 @@
 #include <iostream>
 #include <assert.h>
-#include "NetworkStub.h"
+#include "AlerterNetworkHandler.h"
 
 int alertFailureCount = 0;
 int returnCode = 0;
