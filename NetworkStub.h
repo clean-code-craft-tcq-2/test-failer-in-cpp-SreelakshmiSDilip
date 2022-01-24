@@ -7,7 +7,7 @@ int  networkAlertStub(float celcius) {
     std::cout << "ALERT: Temperature is " << celcius << " celcius.\n";
     if(c_AlertThresholdTempCel > celcius)
     {
-        return 500;
+        return 200;
     }
     else
     {
