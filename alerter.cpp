@@ -2,7 +2,7 @@
 #include <assert.h>
 #include "NetworkStub.h"
 
-int alertFailureCount = 0;
+static int alertFailureCount = 0;
 int returnCode = 0;
 
 void alertInCelcius(float farenheit) {
