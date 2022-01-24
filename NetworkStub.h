@@ -32,7 +32,7 @@ int networkAlert(float celcius , TESTENV testParameter)
    }
    else
    {
-      l_returnCode = networkAlertStub(float celcius);
+      l_returnCode = networkAlertStub(celcius);
    }
    return l_returnCode;
 }
