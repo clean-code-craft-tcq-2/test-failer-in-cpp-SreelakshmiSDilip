@@ -5,7 +5,7 @@
 int alertFailureCount = 0;
 int returnCode = 0;
 
-void alertInCelcius(float farenheit,int networkAlertFnPtr) {
+void alertInCelcius(float farenheit,int* networkAlertFnPtr) {
     int *ptrToNetworkAlertFn(float); 
     ptrToNetworkAlertFn = &networkAlertFnPtr;
     float celcius = (farenheit - 32) * 5 / 9;
