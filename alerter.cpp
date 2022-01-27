@@ -7,7 +7,7 @@ int returnCode = 0;
 
 void alertInCelcius(float farenheit,int (*networkAlertFnPtr)(float)) {
     float celcius = (farenheit - 32) * 5 / 9;
-    returnCode = *networkAlertFnPtr(celcius);
+    returnCode = (*networkAlertFnPtr)(celcius);
     if (returnCode != 200) {
         // non-ok response is not an error! Issues happen in life!
         // let us keep a count of failures to report
