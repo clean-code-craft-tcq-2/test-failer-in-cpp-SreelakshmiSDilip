@@ -18,12 +18,5 @@ int  networkAlertStub(float celcius) {
    
 }
 
-int networkAlertReal(float celcius)
-{
-   int l_returnCode = 0;
-  
-      // add actual network communication code here
-  
-   return l_returnCode;
-}
+
 
