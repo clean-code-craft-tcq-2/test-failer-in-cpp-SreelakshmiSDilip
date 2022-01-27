@@ -9,7 +9,7 @@ const char* minorColor[] = {"Blue", "Orange", "Green", "Brown", "Slate"};
 
 
 
-std::string GetCombinedPairNumandColorString(int majorColorId , int minorColorId)
+std::string getCombinedPairNumandColorString(int majorColorId , int minorColorId)
 {
 
 	std::string pairNumString = std::to_string(majorColorId* 5 + minorColorId);
@@ -37,7 +37,7 @@ int printColorMap()
 void testColorCodingReferenceManual(int majorColorId, int minorColorId , std::string expectedPairNumberandColor)
 {
 
-	std:: string actualPairNumberandColor = GetCombinedPairNumandColorString(majorColorId,minorColorId);
+	std:: string actualPairNumberandColor = getCombinedPairNumandColorString(majorColorId,minorColorId);
 	assert(actualPairNumberandColor.compare(expectedPairNumberandColor) == 0);
 	
 }
