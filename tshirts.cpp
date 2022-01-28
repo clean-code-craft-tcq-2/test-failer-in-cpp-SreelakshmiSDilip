@@ -22,12 +22,8 @@ int main() {
     assert(size(43) == 'L');
     assert(size(38) == 'M'); // size 38 can  be small or medium
     assert(size(42) == 'L');   //size 42 can be medium or large
-    assert(size(1000) != 'S');
-    assert(size(1000) != 'M') ;
-    assert (size(1000) != 'L'); // size 1000 is not a valid input
-    assert(size(0) != 'S');
-    assert (size(0) != 'M') ;
-    assert(size(0) != 'L'); // size 0 is not a valid input
+    assert(size(50) == 'Invalid');
+    assert(size(30) != 'Invalid');
     std::cout << "All is well (maybe!)\n";
     return 0;
 }
