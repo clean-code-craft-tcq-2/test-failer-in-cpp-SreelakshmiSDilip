@@ -5,6 +5,12 @@
 int alertFailureCount = 0;
 int returnCode = 0;
 
+float convertFaherenheitToCelcius(float farenheit)
+{
+	  float celcius = (farenheit - 32) * 5 / 9;
+	  return celcius;
+}
+
 void alertInCelcius(float farenheit,int (*networkAlertFnPtr)(float)) {
     float celcius = convertFaherenheitToCelcius(farenheit);
     returnCode = (*networkAlertFnPtr)(celcius);
@@ -16,11 +22,7 @@ void alertInCelcius(float farenheit,int (*networkAlertFnPtr)(float)) {
         alertFailureCount += 1;
     }
 }
-float convertFaherenheitToCelcius(float farenheit)
-{
-	  float celcius = (farenheit - 32) * 5 / 9;
-	  return celcius;
-}
+
 
 int main() {
     
