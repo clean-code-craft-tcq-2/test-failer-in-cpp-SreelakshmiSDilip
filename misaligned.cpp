@@ -34,7 +34,7 @@ int printColorMap()
 	return i * j;
 }
 
-void testColorCodingReferenceManual(int majorColorId, int minorColorId ,const char* expectedPairNumberandColor)
+void testColorCodingReferenceManual(int majorColorId, int minorColorId ,std::string expectedPairNumberandColor)
 {
 
 	std:: string actualPairNumberandColor = getCombinedPairNumandColorString(majorColorId,minorColorId);
