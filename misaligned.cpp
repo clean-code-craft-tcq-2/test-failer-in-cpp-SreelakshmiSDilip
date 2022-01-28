@@ -47,7 +47,7 @@ void testColorCodingReferenceManual(int majorColorId, int minorColorId ,std::str
 
 int main() {
 	int result = printColorMap();
-	//assert(result == 25);
+	assert(result != 25);
 	testColorCodingReferenceManual(0,0,"iiiii"); 
 	/*testColorCodingReferenceManual(1 , 1, "	        2	|White  |Orange");
 	testColorCodingReferenceManual(2 , 2, "	        3	|White  |Green ");
