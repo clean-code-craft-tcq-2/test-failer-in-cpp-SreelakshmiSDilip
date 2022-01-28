@@ -13,7 +13,7 @@ const char* getCombinedPairNumandColorString(int majorColorId , int minorColorId
 {
 
 	int pairNum = majorColorId* 5 + minorColorId;
-	const char* pairNumandColorPairStr[80];
+	static char pairNumandColorPairStr[80];
 	snprintf(pairNumandColorPairStr,"%d\t%s\t%s", pairNum,majorColorId,minorColorId);
 	//std::string pairNumandColorPair = pairNumString + tabChar + majorColor[majorColorId]+tabChar+minorColor[majorColorId] ;
 	return pairNumandColorPairStr;
