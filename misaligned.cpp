@@ -9,7 +9,7 @@ const char* minorColor[] = {"Blue", "Orange", "Green", "Brown", "Slate"};
 
 
 
-std::string getCombinedPairNumandColorString(int majorColorId , int minorColorId)
+const char* getCombinedPairNumandColorString(int majorColorId , int minorColorId)
 {
 
 	int pairNum = majorColorId* 5 + minorColorId;
@@ -26,7 +26,7 @@ int printColorMap()
 	int i = 0, j = 0;
 	for(i = 0; i < 5; i++) {
 		for(j = 0; j < 5; j++) {
-			std::string strCurrentRowEntry = getCombinedPairNumandColorString(i,j);
+			const char* strCurrentRowEntry[80] = getCombinedPairNumandColorString(i,j);
 			std::cout <<strCurrentRowEntry<< std::endl;
 
 		}
