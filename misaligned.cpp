@@ -12,11 +12,11 @@ const char* minorColor[] = {"Blue", "Orange", "Green", "Brown", "Slate"};
 std::string getCombinedPairNumandColorString(int majorColorId , int minorColorId)
 {
 
-	int pairNum = smajorColorId* 5 + minorColorId;
-	std :: string pairNumandColorPair;
-	snprintf(pairNumandColorPair,"%d\t%s\t%s", pairNum,majorColorId,minorColorId);
+	int pairNum = majorColorId* 5 + minorColorId;
+	const char* pairNumandColorPairStr[80];
+	snprintf(pairNumandColorPairStr,"%d\t%s\t%s", pairNum,majorColorId,minorColorId);
 	//std::string pairNumandColorPair = pairNumString + tabChar + majorColor[majorColorId]+tabChar+minorColor[majorColorId] ;
-	return pairNumandColorPair;
+	return pairNumandColorPairStr;
 
 }
 
