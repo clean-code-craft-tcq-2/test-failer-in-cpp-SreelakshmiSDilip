@@ -14,16 +14,16 @@ jobs:
       run: |
         g++ -Wall -Wextra -Werror tshirts.cpp -o tshirts.out
     - name: run
-      run: ./testchecker
+      run: ./tshirts
 
     - name: misaligned fail
       run: |
         g++ -Wall -Wextra -Werror misaligned.cpp -o misaligned.out
     - name: run
-      run: ./testchecker
+      run: ./misaligned
 
     - name: alerter fail
       run: |
         g++ -Wall -Wextra -Werror alerter.cpp -o alerter.out
     - name: run
-      run: ./testchecker
+      run: ./alerter
