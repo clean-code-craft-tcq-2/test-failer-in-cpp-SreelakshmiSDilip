@@ -39,7 +39,7 @@ void testColorCodingReferenceManual(int majorColorId, int minorColorId ,std::str
 
 	std:: string actualPairNumberandColor = getCombinedPairNumandColorString(majorColorId,minorColorId);
 	//std::cout<<std::endl << actualPairNumberandColor;
-	std::cout<<std::endl << expectedPairNumberandColor;
+	std::cout<<std::endl << majorColorId<<minorColorId<< expectedPairNumberandColor;
 	assert(actualPairNumberandColor.compare(expectedPairNumberandColor) == 0);
 	
 }
@@ -47,7 +47,7 @@ void testColorCodingReferenceManual(int majorColorId, int minorColorId ,std::str
 
 int main() {
 	int result = printColorMap();
-	assert(result != 25);
+	assert(result == 25);
 	testColorCodingReferenceManual(0,0,"iiiii"); 
 	/*testColorCodingReferenceManual(1 , 1, "	        2	|White  |Orange");
 	testColorCodingReferenceManual(2 , 2, "	        3	|White  |Green ");
