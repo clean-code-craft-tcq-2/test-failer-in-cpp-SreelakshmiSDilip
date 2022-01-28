@@ -10,9 +10,9 @@ char size(int cms) {
     } else if(cms >= 42 && cms < 44) {
         sizeName = 'L';
     }else if (cms >= 44 && cms < 48){
-        sizeName = 'XL';
+        sizeName = "XL";
     }else{
-        sizeName ='NA';
+        sizeName ="NA";
     }
     return sizeName;
 }
@@ -23,8 +23,8 @@ int main() {
     assert(size(43) == 'L');
     assert(size(38) == 'M'); // size 38 can  be small or medium
     assert(size(42) == 'L');   //size 42 can be medium or large
-    assert(size(50) == 'NA');
-    assert(size(30) != 'NA');
+    assert(size(50) == "NA");
+    assert(size(30) != "NA");
     std::cout << "All is well (maybe!)\n";
     return 0;
 }
