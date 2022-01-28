@@ -17,7 +17,7 @@ int main() {
     assert(size(37) == 'S');
     assert(size(40) == 'M');
     assert(size(43) == 'L');
-    assert(size(38) == 'S'); // size 38 can  be small or medium
+    assert(size(38) == 'M'); // size 38 can  be small or medium
     assert(size(42) == 'L');   //size 42 can be medium or large
     assert(size(1000) != 'S');
     assert(size(1000) != 'M') ;
