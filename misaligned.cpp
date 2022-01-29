@@ -27,7 +27,7 @@ int printColorMap()
 	for(i = 0; i < 5; i++) {
 		for(j = 0; j < 5; j++) {
 			//const char* strCurrentRowEntry[80] = getCombinedPairNumandColorString(i,j);
-			std::cout <<getCombinedPairNumandColorString(i,j)<< std::endl;
+			std::cout <<std::endl<<getCombinedPairNumandColorString(i,j)<< std::endl;
 
 		}
 	}
