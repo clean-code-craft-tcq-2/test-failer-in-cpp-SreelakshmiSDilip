@@ -38,7 +38,7 @@ void testColorCodingReferenceManual(int majorColorId, int minorColorId ,std::str
 {
 
 	std:: string actualPairNumberandColor = getCombinedPairNumandColorString(majorColorId,minorColorId);
-	std::cout<<std::endl<<actualPairNumberandColor;
+	puts(actualPairNumberandColor);
 	assert(actualPairNumberandColor.compare(expectedPairNumberandColor) == 0);
 	
 }
