@@ -12,7 +12,7 @@ const char* minorColor[] = {"Blue", "Orange", "Green", "Brown", "Slate"};
 const char* getCombinedPairNumandColorString(int majorColorId , int minorColorId)
 {
 
-	int pairNum = (majorColorId)* 5 + minorColorId+1;
+	int pairNum = (majorColorId)* 5 + minorColorId + 1;
 	static char pairNumandColorPairStr[80];
 	sprintf(pairNumandColorPairStr,"\t%d\t|%s\t|%s\t", pairNum,majorColor[majorColorId],minorColor[minorColorId]);
 	//std::string pairNumandColorPair = pairNumString + tabChar + majorColor[majorColorId]+tabChar+minorColor[majorColorId] ;
@@ -45,6 +45,7 @@ void testColorCodingReferenceManual(int majorColorId, int minorColorId ,std::str
 
 
 int main() {
+	testColorCodingReferenceManual(1 , 1, "	        2	|White  |Orange");
 	int result = printColorMap();
 	assert(result == 25);
 	testColorCodingReferenceManual(1 , 1, "	        2	|White  |Orange");
