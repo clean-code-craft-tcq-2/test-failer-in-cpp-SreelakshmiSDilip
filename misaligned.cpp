@@ -27,7 +27,6 @@ int printColorMap()
 	int i = 0, j = 0;
 	for(i = 0; i < 5; i++) {
 		for(j = 0; j < 5; j++) {
-			//const char* strCurrentRowEntry[80] = getCombinedPairNumandColorString(i,j);
 			std::cout <<std::endl<<getCombinedPairNumandColorString(i,j)<< std::endl;
 
 		}
@@ -37,13 +36,8 @@ int printColorMap()
 
 void testColorCodingReferenceManual(int majorColorId, int minorColorId ,std::string expectedPairNumberandColor)
 {
-
 	std:: string actualPairNumberandColor = getCombinedPairNumandColorString(majorColorId,minorColorId);
 	assert(actualPairNumberandColor.compare(expectedPairNumberandColor) == 0);
-	//std::cout<<std::endl<<actualPairNumberandColor.compare(expectedPairNumberandColor) ;
-	std::cout<<std::endl<<actualPairNumberandColor.length()<<" " <<expectedPairNumberandColor.length();
-	std::cout<<std::endl<<expectedPairNumberandColor;
-	std::cout<<std::endl<<actualPairNumberandColor;
 }
 
 
