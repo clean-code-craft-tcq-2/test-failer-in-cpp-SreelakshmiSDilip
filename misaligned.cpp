@@ -21,9 +21,10 @@ const char* getCombinedPairNumandColorString(int majorColorId , int minorColorId
 
 int printColorMap()
 {
-
-	for(int majorColorIndex = 0; majorColorIndex < c_MaxIndex; majorColorIndex++) {
-		for(int minorColorIndex = 0; minorColorIndex < c_MaxIndex; minorColorIndex++) {
+        int majorColorIndex = 0;
+	int minorColorIndex = 0;
+	for(majorColorIndex = 0; majorColorIndex < c_MaxIndex; majorColorIndex++) {
+		for(minorColorIndex = 0; minorColorIndex < c_MaxIndex; minorColorIndex++) {
 			std::cout <<std::endl<<getCombinedPairNumandColorString(majorColorIndex,minorColorIndex)<< std::endl;
 
 		}
