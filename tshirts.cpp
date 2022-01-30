@@ -10,7 +10,7 @@ char size(int cms) {
     } else if(cms >= 42 && cms < 44) {
         sizeName = 'L';
     }else{
-        sizeName ='U';
+        sizeName ='U'; //U stands for undefined
     }
     return sizeName;
 }
