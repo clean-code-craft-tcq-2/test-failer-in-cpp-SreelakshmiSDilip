@@ -23,7 +23,7 @@ int printColorMap()
 {
 
 	for(int majorColorIndex = 0; majorColorIndex < c_MaxIndex; majorColorIndex++) {
-		for(minorColorIndex = 0; minorColorIndex < c_MaxIndex; minorColorIndex++) {
+		for(int minorColorIndex = 0; minorColorIndex < c_MaxIndex; minorColorIndex++) {
 			std::cout <<std::endl<<getCombinedPairNumandColorString(majorColorIndex,minorColorIndex)<< std::endl;
 
 		}
