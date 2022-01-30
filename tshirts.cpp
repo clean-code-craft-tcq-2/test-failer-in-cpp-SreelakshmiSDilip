@@ -19,8 +19,8 @@ int main() {
     assert(size(37) == 'S');
     assert(size(40) == 'M');
     assert(size(43) == 'L');
-    assert(size(38) == 'M'); // size 38 can  be small or medium
-    assert(size(42) == 'L');   //size 42 can be medium or large
+    assert(size(38) == 'M'); 
+    assert(size(42) == 'L');   
     assert(size(50) == 'U');
     assert(size(30) == 'U');
     std::cout << "All is well (maybe!)\n";
