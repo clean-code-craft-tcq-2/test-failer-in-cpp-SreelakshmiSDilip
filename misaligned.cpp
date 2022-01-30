@@ -57,7 +57,7 @@ int main() {
         testColorCodingReferenceManual(1 , 1, "	7	|Red	|Orange");
 	testColorCodingReferenceManual(1 , 2, "	8	|Red	|Green");
         testColorCodingReferenceManual(1 , 3, "	9	|Red	|Brown");
-        testColorCodingReferenceManual(1 , 4, "10	|Red	|Slate");
+	testColorCodingReferenceManual(1 , 4, "10	|Red	|Slate");
 	testColorCodingReferenceManual(2,  0, "11	|Black  |Blue  ");
 	testColorCodingReferenceManual(2,  1, "12	|Black  |Orange");
 	testColorCodingReferenceManual(2,  2, "13	|Black  |Green ");
