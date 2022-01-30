@@ -39,7 +39,7 @@ void testColorCodingReferenceManual(int majorColorId, int minorColorId ,std::str
 {
 
 	std:: string actualPairNumberandColor = getCombinedPairNumandColorString(majorColorId,minorColorId);
-	//assert(actualPairNumberandColor.compare(expectedPairNumberandColor) == 0);
+	assert(actualPairNumberandColor.compare(expectedPairNumberandColor) == 0);
 	//std::cout<<std::endl<<actualPairNumberandColor.compare(expectedPairNumberandColor) ;
 	std::cout<<std::endl<<actualPairNumberandColor.length()<<" " <<expectedPairNumberandColor.length();
 	std::cout<<std::endl<<expectedPairNumberandColor;
@@ -52,7 +52,7 @@ int main() {
 	assert(result == 25);
         testColorCodingReferenceManual(0 , 0, "	1	|White	|Blue");
 	testColorCodingReferenceManual(0 , 1, "	2	|White	|Orange");
-	/*testColorCodingReferenceManual(0 , 2, "	3	|White	|Green");
+	testColorCodingReferenceManual(0 , 2, "	3	|White	|Green");
         testColorCodingReferenceManual(0 , 3, "	4	|White	|Brown");
         testColorCodingReferenceManual(0 , 4, "	5	|White	|Slate");
 	testColorCodingReferenceManual(1 , 0, "	6	|Red	|Blue");
@@ -74,7 +74,7 @@ int main() {
         testColorCodingReferenceManual(4 , 1, "	22	|Violet	|Orange");
 	testColorCodingReferenceManual(4 , 2, "	23	|Violet	|Green");
         testColorCodingReferenceManual(4 , 3, "	24	|Violet	|Brown");
-        testColorCodingReferenceManual(4 , 4, "	25	|Violet	|Slate");*/
+        testColorCodingReferenceManual(4 , 4, "	25	|Violet	|Slate");
 
 	std::cout << "All is well (maybe!)\n";
 	return 0;
