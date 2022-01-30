@@ -7,8 +7,7 @@
 const char* majorColor[] = {"White", "Red", "Black", "Yellow", "Violet"};
 const char* minorColor[] = {"Blue", "Orange", "Green", "Brown", "Slate"};
 
-
-
+const int c_MaxIndex = 5;
 
 const char* getCombinedPairNumandColorString(int majorColorId , int minorColorId)
 {
@@ -16,7 +15,6 @@ const char* getCombinedPairNumandColorString(int majorColorId , int minorColorId
 	int pairNum = (majorColorId)* 5 + minorColorId + 1;
 	static char pairNumandColorPairStr[80];
 	sprintf(pairNumandColorPairStr,"\t%d\t|%s\t|%s", pairNum,majorColor[majorColorId],minorColor[minorColorId]);
-	//std::string pairNumandColorPair = pairNumString + tabChar + majorColor[majorColorId]+tabChar+minorColor[majorColorId] ;
 	return pairNumandColorPairStr;
 
 }
@@ -24,14 +22,13 @@ const char* getCombinedPairNumandColorString(int majorColorId , int minorColorId
 int printColorMap()
 {
 
-	int i = 0, j = 0;
-	for(i = 0; i < 5; i++) {
-		for(j = 0; j < 5; j++) {
-			std::cout <<std::endl<<getCombinedPairNumandColorString(i,j)<< std::endl;
+	for(int majorColorIndex = 0; majorColorIndex < c_MaxIndex; majorColorIndex++) {
+		for(minorColorIndex = 0; minorColorIndex < c_MaxIndex; minorColorIndex++) {
+			std::cout <<std::endl<<getCombinedPairNumandColorString(majorColorIndex,minorColorIndex)<< std::endl;
 
 		}
 	}
-	return i * j;
+	return majorColorIndex * minorColorIndex;
 }
 
 void testColorCodingReferenceManual(int majorColorId, int minorColorId ,std::string expectedPairNumberandColor)
