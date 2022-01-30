@@ -46,20 +46,18 @@ void testColorCodingReferenceManual(int majorColorId, int minorColorId ,std::str
 
 
 int main() {
-	testColorCodingReferenceManual(0 , 1, "	2	|White	|Orange");
 	//int result = printColorMap();
 	//assert(result == 25);
         testColorCodingReferenceManual(0 , 0, "	2	|White	|Blue");
 	testColorCodingReferenceManual(0 , 1, "	2	|White	|Orange");
-	testColorCodingReferenceManual(0 , 1, "	3	|White	|Green");
-	testColorCodingReferenceManual(0 , 2, " 3	|White  |Green ");
-	testColorCodingReferenceManual(0 , 3, " 4	|White  |Brown ");
-	testColorCodingReferenceManual(0 , 4, " 5	|White  |Slate ");
-	testColorCodingReferenceManual(1 , 0, " 6	|Red    |Blue  ");
-	testColorCodingReferenceManual(1 , 1, " 7	|Red    |Orange");
-	testColorCodingReferenceManual(1 , 2, " 8	|Red    |Green ");
-	testColorCodingReferenceManual(1 , 3, " 9	|Red    |Brown ");
-	testColorCodingReferenceManual(1 , 4, "10	|Red    |Slate ");
+	testColorCodingReferenceManual(0 , 2, "	3	|White	|Green");
+        testColorCodingReferenceManual(0 , 3, "	4	|White	|Brown");
+        testColorCodingReferenceManual(0 , 4, "	5	|White	|Slate");
+	testColorCodingReferenceManual(1 , 0, "	6	|Red	|Blue");
+        testColorCodingReferenceManual(1 , 1, "	7	|Red	|Orange");
+	testColorCodingReferenceManual(1 , 2, "	8	|Red	|Green");
+        testColorCodingReferenceManual(1 , 3, "	9	|Red	|Brown");
+        testColorCodingReferenceManual(1 , 4, "10	|Red	|Slate");
 	testColorCodingReferenceManual(2,  0, "11	|Black  |Blue  ");
 	testColorCodingReferenceManual(2,  1, "12	|Black  |Orange");
 	testColorCodingReferenceManual(2,  2, "13	|Black  |Green ");
