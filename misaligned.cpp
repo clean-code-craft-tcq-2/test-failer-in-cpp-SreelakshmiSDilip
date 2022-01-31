@@ -12,7 +12,7 @@ const int c_MaxIndex = 5;
 const char* getCombinedPairNumandColorString(int majorColorId , int minorColorId)
 {
 
-	int pairNum = (majorColorId)* 5 + minorColorId + 1;
+	int pairNum = (majorColorId)* c_MaxIndex + minorColorId + 1;
 	static char pairNumandColorPairStr[80];
 	sprintf(pairNumandColorPairStr,"\t%d\t|%s\t|%s", pairNum,majorColor[majorColorId],minorColor[minorColorId]);
 	return pairNumandColorPairStr;
