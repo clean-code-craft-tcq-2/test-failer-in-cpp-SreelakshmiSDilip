@@ -2,12 +2,13 @@
 
 
 char CalculateTshirtSize(int sizeInCms) {
+
     char sizeName = '\0';
-    if(sizeInCms >=34 && sizeInCms < 38) {
+    if(sizeInCms >=c_LimitSmall  && sizeInCms < c_limitMedium ) {
         sizeName = 'S';
-    } else if(sizeInCms >=  38 && sizeInCms < 42) {
+    } else if(sizeInCms >=  c_limitMedium && sizeInCms < c_limitLarge {
         sizeName = 'M';
-    } else if(sizeInCms >= 42 && sizeInCms < 44) {
+    } else if(sizeInCms >= c_limitLarge && sizeInCms < c_limitExtraLarge ) {
         sizeName = 'L';
     }else{
         sizeName ='U'; //U stands for undefined
