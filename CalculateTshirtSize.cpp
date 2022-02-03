@@ -4,7 +4,7 @@
 char CalculateTshirtSize(int sizeInCms) {
 
     char sizeName = '\0';
-    if(sizeInCms >=c_LimitSmall  && sizeInCms < c_limitMedium ) {
+    if(sizeInCms >= c_LimitSmall  && sizeInCms < c_limitMedium ) {
         sizeName = 'S';
     } else if(sizeInCms >=  c_limitMedium && sizeInCms < c_limitLarge {
         sizeName = 'M';
