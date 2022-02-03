@@ -1,13 +1,13 @@
 #include <iostream>
 
 
-char size(int cms) {
+char CalculateTshirtSize(int sizeInCms) {
     char sizeName = '\0';
-    if(cms >=34 && cms < 38) {
+    if(sizeInCms >=34 && sizeInCms < 38) {
         sizeName = 'S';
-    } else if(cms >=  38 && cms < 42) {
+    } else if(sizeInCms >=  38 && sizeInCms < 42) {
         sizeName = 'M';
-    } else if(cms >= 42 && cms < 44) {
+    } else if(sizeInCms >= 42 && sizeInCms < 44) {
         sizeName = 'L';
     }else{
         sizeName ='U'; //U stands for undefined
