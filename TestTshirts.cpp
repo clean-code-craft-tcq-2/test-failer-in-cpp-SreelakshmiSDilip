@@ -3,7 +3,7 @@
 #include"tshirts.cpp"
 
 
-TestTshirts(char actualSize ,char expectedSize)
+void TestTshirts(char actualSize ,char expectedSize)
 {
     assert(actualSize == expectedSize);
 }
