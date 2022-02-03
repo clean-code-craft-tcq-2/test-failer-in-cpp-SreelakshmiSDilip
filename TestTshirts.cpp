@@ -5,7 +5,7 @@
 
 void TestTshirts(int actualSizeIncms ,char expectedSize)
 {
-    assert(size(actualSizeIncms) == expectedSize);
+    assert(CalculateTshirtSize(actualSizeIncms) == expectedSize);
 }
 
 int main() {
