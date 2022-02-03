@@ -1,6 +1,6 @@
 #include <iostream>
 #include <assert.h>
-#include "CalculateTshirtSize.h"
+#include "CalculateTshirtSize.cpp"
 
 
 void TestTshirts(int actualSizeIncms ,char expectedSize)
